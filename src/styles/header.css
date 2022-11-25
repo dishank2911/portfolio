@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header{
+        @apply text-white lg:block md:hidden hidden;
+
+        & > div {
+            @apply flex h-24 justify-between items-center;
+
+            & > a > h1{
+                @apply font-semibold text-4xl;
+            }
+
+            & > nav > ul{
+                @apply flex flex-wrap justify-end items-center gap-16 font-bold text-xs uppercase;
+
+                & > li{
+                    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-pink-500 duration-300;
+
+                    & > span{
+                        @apply block max-w-0 transition-all duration-500 h-0.5 bg-pink-500;
+                    }
+                }
+                
+            }
+        }
+    }
+}

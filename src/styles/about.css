@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .about{
+        @apply py-20 lg:flex container mx-auto;
+
+        & > .about_left{
+            @apply flex flex-wrap justify-center items-center aspect-auto;
+        }
+
+        & > .about_right{
+            @apply flex flex-col justify-center lg:pl-24 flex-wrap lg:text-start text-center px-5;
+        }
+    }
+}

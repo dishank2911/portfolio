@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn{
+        @apply flex items-center gap-2 border-2 border-pink-500 font-bold text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:shadow-[10px_7px_5px_#ff3399];
+    }
+
+    .btn__primary{
+        @apply lg:py-4 lg:px-16 py-3 px-10 text-white;
+    }
+
+    .btn__secondary{
+        @apply lg:py-2 lg:px-10 py-2 px-6;
+    }
+
+    .center{
+        @apply container mx-auto;
+    }
+}   
